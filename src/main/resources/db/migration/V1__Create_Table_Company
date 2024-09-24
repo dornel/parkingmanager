@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS `company` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(80) NOT NULL,
+  `cnpj` varchar(80) NOT NULL,
+  `address` varchar(80) NOT NULL,
+  `number` varchar(80) NOT NULL,
+  `vacancymot` int(6) NOT NULL,
+  `vacancycars` int(6) NOT NULL,
+
+  PRIMARY KEY (`id`)
+
+)
