@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5500")
 public class VehicleController {
 
     @Autowired
@@ -44,7 +45,7 @@ public class VehicleController {
         BeanUtils.copyProperties(vehicleDto,vehicle1);
         vehicleRepository.save(vehicle1);
 
-       return ResponseEntity.status(HttpStatus.CREATED).body("Vehicle "+vehicle1.getModel()+" added succesfully!");
+       return ResponseEntity.status(HttpStatus.OK).body("Vehicle "+vehicle1.getModel()+" added succesfully!");
 
     }
 

@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `parking` (
+  `companyid` int NOT NULL ,
+  `plate` varchar(80) NOT NULL,
+  `type` varchar(80) NOT NULL,
+   'dateEntrance' varchar(80) NOT NULL,
+   'dateExit' varchar(80) NOT NULL
+  PRIMARY KEY (`plate`)
+
+)

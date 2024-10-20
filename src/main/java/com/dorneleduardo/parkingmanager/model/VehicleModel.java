@@ -15,7 +15,6 @@ public class VehicleModel {
     private String color;
     private String type;
 
-
     public String getPlate() {
         return plate;
     }
